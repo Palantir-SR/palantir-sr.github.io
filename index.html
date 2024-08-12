@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Palantir</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding-top: 70px;
+    }
+
+    .navbar-default {
+      height: 65px;
+    }
+
+    .navbar-default .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 65px;
+      font-size: 18pt;
+    }
+
+    .navbar-nav>li>a {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 65px;
+      font-size: 16pt;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">Palantir Study</a>
+      </div>
+      <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav ">
+          <li><a href="#about">About</a></li>
+          <li><a href="#download">Downloads</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="page-header">
+          <h2 id="about">About this Study</h2>
+          <p style="font-size: 16px">
+            Neural enhancement through super-resolution (SR) deep neural networks (DNNs) opens up new possibilities for ultra-high-definition live streaming over existing encoding and networking infrastructure. Yet, the heavy SR DNN inference overhead leads to severe deployment challenges. To reduce the overhead, existing systems propose to apply DNN-based SR only on selected anchor frames while upscaling non-anchor frames via the lightweight reusing-based SR approach. However, frame-level scheduling is coarse-grained and fails to deliver optimal efficiency. In this work, we propose Palantir, the first neural-enhanced UHD live streaming system with fine-grained patch-level scheduling. In the presented solutions, two novel techniques are incorporated to make good scheduling decisions for inference overhead optimization and reduce the scheduling latency. Firstly, under the guidance of our pioneering and theoretical analysis, Palantir constructs a directed acyclic graph (DAG) for lightweight yet accurate quality estimation under any possible anchor patch set. Secondly, to further optimize the scheduling latency, Palantir improves parallelizability by refactoring the computation subprocedure of the estimation process into a sparse matrix-matrix multiplication operation. The evaluation results suggest that Palantir incurs a negligible scheduling latency accounting for less than 5.7% of the end-to-end latency requirement. When compared to the state-of-the-art real-time frame-level scheduling strategy, Palantir reduces the energy overhead of SR-integrated mobile clients by 38.1% at most (and 22.4% on average) and the monetary costs of cloud-based SR by 80.1% at most (and 38.4% on average).
+          </p>
+          <br>
+          <h2 id="download">Code Download</h2>
+          <p style="font-size: 16px">
+            The preprint can be found at 
+            <a href="">arxiv</a>.<br>
+          </p>
+          <h4>Code</h4>
+          <p style="font-size: 16px">
+            The customization code of Palantir will be released soon.
+          </p>
+          <br>
+          <h2 id="contact">Contact</h2>
+          <p>
+            <b>jinxq21@mails.tsinghua.edu.cn</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
